@@ -26,5 +26,15 @@
         {
             OpenForm(new Lab3());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Lab4());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Lab5());
+        }
     }
 }

@@ -36,26 +36,34 @@
 
         private Quadrilateral? InitQuadrilateral()
         {
-            if (!int.TryParse(X0box.Text, out int x0)) return null;
-            if (!int.TryParse(X1box.Text, out int x1)) return null;
-            if (!int.TryParse(X2box.Text, out int x2)) return null;
-            if (!int.TryParse(X3box.Text, out int x3)) return null;
-
-            if (!int.TryParse(Y0box.Text, out int y0)) return null;
-            if (!int.TryParse(Y1box.Text, out int y1)) return null;
-            if (!int.TryParse(Y2box.Text, out int y2)) return null;
-            if (!int.TryParse(Y3box.Text, out int y3)) return null;
-
-            if (selectColor == Color.Black)
+            try
             {
-                Quadrilateral quadrilateral = new(x0, y0, x1, y1, x2, y2, x3, y3);
-                return quadrilateral;
+                var x0 = int.Parse(X0box.Text);
+                var x1 = int.Parse(X1box.Text);
+                var x2 = int.Parse(X2box.Text);
+                var x3 = int.Parse(X3box.Text);
+
+                var y0 = int.Parse(Y0box.Text);
+                var y1 = int.Parse(Y1box.Text);
+                var y2 = int.Parse(Y2box.Text);
+                var y3 = int.Parse(Y3box.Text);
+
+                if (selectColor == Color.Black)
+                {
+                    Quadrilateral quadrilateral = new(x0, y0, x1, y1, x2, y2, x3, y3);
+                    return quadrilateral;
+                }
+                else
+                {
+                    ColorQuadrilateral colorQuadrilateral = new(selectColor, x0, y0, x1, y1, x2, y2, x3, y3);
+                    return colorQuadrilateral;
+                }
             }
-            else
+            catch
             {
-                ColorQuadrilateral colorQuadrilateral = new(selectColor, x0, y0, x1, y1, x2, y2, x3, y3);
-                return colorQuadrilateral;
+                return null;
             }
+
         }
 
         private void InitForm()
