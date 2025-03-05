@@ -1,6 +1,6 @@
 ﻿namespace LabForms
 {
-    partial class Lab3
+    partial class Lab3Form
     {
         /// <summary>
         /// Required designer variable.
@@ -43,235 +43,224 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            SwithColor = new Button();
             ColorLabel = new Label();
             DrawButton = new Button();
             SquareButton = new Button();
             PerimeterButton = new Button();
             PerimeterLaber = new Label();
             SquareLabel = new Label();
+            comboBox1 = new ComboBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(365, 14);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(256, 8);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(907, 710);
+            pictureBox1.Size = new Size(635, 426);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // X0box
             // 
-            X0box.Location = new Point(87, 60);
-            X0box.Margin = new Padding(4, 5, 4, 5);
+            X0box.Location = new Point(110, 73);
             X0box.Name = "X0box";
-            X0box.Size = new Size(57, 31);
+            X0box.Size = new Size(41, 23);
             X0box.TabIndex = 1;
             // 
             // X1box
             // 
-            X1box.Location = new Point(87, 108);
-            X1box.Margin = new Padding(4, 5, 4, 5);
+            X1box.Location = new Point(110, 102);
             X1box.Name = "X1box";
-            X1box.Size = new Size(57, 31);
+            X1box.Size = new Size(41, 23);
             X1box.TabIndex = 2;
             // 
             // X2box
             // 
-            X2box.Location = new Point(87, 156);
-            X2box.Margin = new Padding(4, 5, 4, 5);
+            X2box.Location = new Point(110, 131);
             X2box.Name = "X2box";
-            X2box.Size = new Size(57, 31);
+            X2box.Size = new Size(41, 23);
             X2box.TabIndex = 3;
             // 
             // X3box
             // 
-            X3box.Location = new Point(87, 205);
-            X3box.Margin = new Padding(4, 5, 4, 5);
+            X3box.Location = new Point(110, 160);
             X3box.Name = "X3box";
-            X3box.Size = new Size(57, 31);
+            X3box.Size = new Size(41, 23);
             X3box.TabIndex = 4;
             // 
             // Y3box
             // 
-            Y3box.Location = new Point(154, 205);
-            Y3box.Margin = new Padding(4, 5, 4, 5);
+            Y3box.Location = new Point(157, 160);
             Y3box.Name = "Y3box";
-            Y3box.Size = new Size(57, 31);
+            Y3box.Size = new Size(41, 23);
             Y3box.TabIndex = 8;
             // 
             // Y2box
             // 
-            Y2box.Location = new Point(154, 156);
-            Y2box.Margin = new Padding(4, 5, 4, 5);
+            Y2box.Location = new Point(157, 131);
             Y2box.Name = "Y2box";
-            Y2box.Size = new Size(57, 31);
+            Y2box.Size = new Size(41, 23);
             Y2box.TabIndex = 7;
             // 
             // Y1box
             // 
-            Y1box.Location = new Point(154, 108);
-            Y1box.Margin = new Padding(4, 5, 4, 5);
+            Y1box.Location = new Point(157, 102);
             Y1box.Name = "Y1box";
-            Y1box.Size = new Size(57, 31);
+            Y1box.Size = new Size(41, 23);
             Y1box.TabIndex = 6;
             // 
             // Y0box
             // 
-            Y0box.Location = new Point(154, 60);
-            Y0box.Margin = new Padding(4, 5, 4, 5);
+            Y0box.Location = new Point(157, 73);
             Y0box.Name = "Y0box";
-            Y0box.Size = new Size(57, 31);
+            Y0box.Size = new Size(41, 23);
             Y0box.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(10, 66);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(56, 77);
             label1.Name = "label1";
-            label1.Size = new Size(69, 25);
+            label1.Size = new Size(44, 15);
             label1.TabIndex = 9;
             label1.Text = "Cords0";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(10, 114);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(56, 105);
             label2.Name = "label2";
-            label2.Size = new Size(69, 25);
+            label2.Size = new Size(44, 15);
             label2.TabIndex = 10;
             label2.Text = "Cords1";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(10, 162);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(56, 134);
             label3.Name = "label3";
-            label3.Size = new Size(69, 25);
+            label3.Size = new Size(44, 15);
             label3.TabIndex = 11;
             label3.Text = "Cords2";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(10, 211);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(56, 164);
             label4.Name = "label4";
-            label4.Size = new Size(69, 25);
+            label4.Size = new Size(44, 15);
             label4.TabIndex = 12;
             label4.Text = "Cords3";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(108, 30);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(125, 55);
             label5.Name = "label5";
-            label5.Size = new Size(23, 25);
+            label5.Size = new Size(14, 15);
             label5.TabIndex = 13;
             label5.Text = "X";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(171, 30);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(169, 55);
             label6.Name = "label6";
-            label6.Size = new Size(22, 25);
+            label6.Size = new Size(14, 15);
             label6.TabIndex = 14;
             label6.Text = "Y";
-            // 
-            // SwithColor
-            // 
-            SwithColor.Location = new Point(17, 405);
-            SwithColor.Margin = new Padding(4, 5, 4, 5);
-            SwithColor.Name = "SwithColor";
-            SwithColor.Size = new Size(184, 57);
-            SwithColor.TabIndex = 15;
-            SwithColor.Text = "Next Color";
-            SwithColor.UseVisualStyleBackColor = true;
-            SwithColor.Click += SwithColor_Click;
             // 
             // ColorLabel
             // 
             ColorLabel.AutoSize = true;
-            ColorLabel.Location = new Point(63, 375);
-            ColorLabel.Margin = new Padding(4, 0, 4, 0);
+            ColorLabel.Location = new Point(118, 262);
             ColorLabel.Name = "ColorLabel";
-            ColorLabel.Size = new Size(55, 25);
+            ColorLabel.Size = new Size(36, 15);
             ColorLabel.TabIndex = 16;
             ColorLabel.Text = "Color";
             // 
             // DrawButton
             // 
-            DrawButton.Location = new Point(17, 258);
-            DrawButton.Margin = new Padding(4, 5, 4, 5);
+            DrawButton.Location = new Point(69, 199);
             DrawButton.Name = "DrawButton";
-            DrawButton.Size = new Size(184, 112);
+            DrawButton.Size = new Size(129, 60);
             DrawButton.TabIndex = 17;
-            DrawButton.Text = "DRAW";
+            DrawButton.Text = "Рисовать";
             DrawButton.UseVisualStyleBackColor = true;
             DrawButton.Click += DrawButton_Click;
             // 
             // SquareButton
             // 
-            SquareButton.Location = new Point(10, 558);
-            SquareButton.Margin = new Padding(4, 5, 4, 5);
+            SquareButton.Location = new Point(58, 335);
             SquareButton.Name = "SquareButton";
-            SquareButton.Size = new Size(200, 53);
+            SquareButton.Size = new Size(140, 32);
             SquareButton.TabIndex = 18;
-            SquareButton.Text = "Square";
+            SquareButton.Text = "Площадь";
             SquareButton.UseVisualStyleBackColor = true;
             SquareButton.Click += SquareButton_Click;
             // 
             // PerimeterButton
             // 
-            PerimeterButton.Location = new Point(10, 677);
-            PerimeterButton.Margin = new Padding(4, 5, 4, 5);
+            PerimeterButton.Location = new Point(58, 406);
             PerimeterButton.Name = "PerimeterButton";
-            PerimeterButton.Size = new Size(200, 53);
+            PerimeterButton.Size = new Size(140, 32);
             PerimeterButton.TabIndex = 19;
-            PerimeterButton.Text = "Perimeter";
+            PerimeterButton.Text = "Периметер";
             PerimeterButton.UseVisualStyleBackColor = true;
             PerimeterButton.Click += PerimeterButton_Click;
             // 
             // PerimeterLaber
             // 
             PerimeterLaber.AutoSize = true;
-            PerimeterLaber.Location = new Point(73, 647);
-            PerimeterLaber.Margin = new Padding(4, 0, 4, 0);
+            PerimeterLaber.Location = new Point(96, 388);
             PerimeterLaber.Name = "PerimeterLaber";
-            PerimeterLaber.Size = new Size(86, 25);
+            PerimeterLaber.Size = new Size(58, 15);
             PerimeterLaber.TabIndex = 20;
             PerimeterLaber.Text = "Perimeter";
             // 
             // SquareLabel
             // 
             SquareLabel.AutoSize = true;
-            SquareLabel.Location = new Point(73, 528);
-            SquareLabel.Margin = new Padding(4, 0, 4, 0);
+            SquareLabel.Location = new Point(111, 317);
             SquareLabel.Name = "SquareLabel";
-            SquareLabel.Size = new Size(67, 25);
+            SquareLabel.Size = new Size(43, 15);
             SquareLabel.TabIndex = 21;
             SquareLabel.Text = "Square";
             // 
-            // Lab3
+            // comboBox1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(64, 280);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(134, 23);
+            comboBox1.TabIndex = 22;
+            comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
+            // 
+            // label7
+            // 
+            label7.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(26, 8);
+            label7.Name = "label7";
+            label7.Size = new Size(200, 40);
+            label7.TabIndex = 23;
+            label7.Text = "Точки четырёхугольника (по часовой)";
+            label7.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // Lab3Form
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1285, 750);
+            ClientSize = new Size(900, 450);
+            Controls.Add(label7);
+            Controls.Add(comboBox1);
             Controls.Add(SquareLabel);
             Controls.Add(PerimeterLaber);
             Controls.Add(PerimeterButton);
             Controls.Add(SquareButton);
             Controls.Add(DrawButton);
             Controls.Add(ColorLabel);
-            Controls.Add(SwithColor);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -287,8 +276,7 @@
             Controls.Add(X1box);
             Controls.Add(X0box);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 5, 4, 5);
-            Name = "Lab3";
+            Name = "Lab3Form";
             Text = "Lab3";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -312,12 +300,13 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Button SwithColor;
         private Label ColorLabel;
         private Button DrawButton;
         private Button SquareButton;
         private Button PerimeterButton;
         private Label PerimeterLaber;
         private Label SquareLabel;
+        private ComboBox comboBox1;
+        private Label label7;
     }
 }

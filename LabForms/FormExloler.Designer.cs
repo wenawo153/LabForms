@@ -28,139 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
+            Lab1Button = new Button();
+            Lab2Button = new Button();
+            Lab3Button = new Button();
+            Lab4Button = new Button();
+            Lab5Button = new Button();
+            Lab6Button = new Button();
+            Lab7Button = new Button();
+            Lab8Button = new Button();
             SuspendLayout();
             // 
-            // button1
+            // Lab1Button
             // 
-            button1.Location = new Point(107, 53);
-            button1.Margin = new Padding(4, 5, 4, 5);
-            button1.Name = "button1";
-            button1.Size = new Size(140, 73);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            Lab1Button.Location = new Point(12, 12);
+            Lab1Button.Name = "Lab1Button";
+            Lab1Button.Size = new Size(120, 44);
+            Lab1Button.TabIndex = 0;
+            Lab1Button.Text = "Lab1";
+            Lab1Button.UseVisualStyleBackColor = true;
+            Lab1Button.Click += Lab1Button_Click;
             // 
-            // button2
+            // Lab2Button
             // 
-            button2.Location = new Point(107, 137);
-            button2.Margin = new Padding(4, 5, 4, 5);
-            button2.Name = "button2";
-            button2.Size = new Size(140, 73);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            Lab2Button.Location = new Point(12, 62);
+            Lab2Button.Name = "Lab2Button";
+            Lab2Button.Size = new Size(120, 44);
+            Lab2Button.TabIndex = 1;
+            Lab2Button.Text = "Lab2";
+            Lab2Button.UseVisualStyleBackColor = true;
+            Lab2Button.Click += Lab2Button_Click;
             // 
-            // button3
+            // Lab3Button
             // 
-            button3.Location = new Point(107, 220);
-            button3.Margin = new Padding(4, 5, 4, 5);
-            button3.Name = "button3";
-            button3.Size = new Size(140, 73);
-            button3.TabIndex = 3;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            Lab3Button.Location = new Point(12, 112);
+            Lab3Button.Name = "Lab3Button";
+            Lab3Button.Size = new Size(120, 44);
+            Lab3Button.TabIndex = 3;
+            Lab3Button.Text = "Lab3";
+            Lab3Button.UseVisualStyleBackColor = true;
+            Lab3Button.Click += Lab3Button_Click;
             // 
-            // button4
+            // Lab4Button
             // 
-            button4.Location = new Point(107, 303);
-            button4.Margin = new Padding(4, 5, 4, 5);
-            button4.Name = "button4";
-            button4.Size = new Size(140, 73);
-            button4.TabIndex = 2;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            Lab4Button.Location = new Point(12, 162);
+            Lab4Button.Name = "Lab4Button";
+            Lab4Button.Size = new Size(120, 44);
+            Lab4Button.TabIndex = 2;
+            Lab4Button.Text = "Lab4";
+            Lab4Button.UseVisualStyleBackColor = true;
+            Lab4Button.Click += Lab4Button_Click;
             // 
-            // button5
+            // Lab5Button
             // 
-            button5.Location = new Point(107, 387);
-            button5.Margin = new Padding(4, 5, 4, 5);
-            button5.Name = "button5";
-            button5.Size = new Size(140, 73);
-            button5.TabIndex = 4;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            Lab5Button.Location = new Point(138, 12);
+            Lab5Button.Name = "Lab5Button";
+            Lab5Button.Size = new Size(120, 44);
+            Lab5Button.TabIndex = 4;
+            Lab5Button.Text = "Lab5";
+            Lab5Button.UseVisualStyleBackColor = true;
+            Lab5Button.Click += Lab5Button_Click;
             // 
-            // button6
+            // Lab6Button
             // 
-            button6.Location = new Point(256, 53);
-            button6.Margin = new Padding(4, 5, 4, 5);
-            button6.Name = "button6";
-            button6.Size = new Size(140, 73);
-            button6.TabIndex = 9;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            Lab6Button.Location = new Point(138, 62);
+            Lab6Button.Name = "Lab6Button";
+            Lab6Button.Size = new Size(120, 44);
+            Lab6Button.TabIndex = 9;
+            Lab6Button.Text = "Lab6";
+            Lab6Button.UseVisualStyleBackColor = true;
+            Lab6Button.Click += Lab6Button_Click;
             // 
-            // button7
+            // Lab7Button
             // 
-            button7.Location = new Point(256, 137);
-            button7.Margin = new Padding(4, 5, 4, 5);
-            button7.Name = "button7";
-            button7.Size = new Size(140, 73);
-            button7.TabIndex = 8;
-            button7.Text = "button7";
-            button7.UseVisualStyleBackColor = true;
+            Lab7Button.Location = new Point(138, 112);
+            Lab7Button.Name = "Lab7Button";
+            Lab7Button.Size = new Size(120, 44);
+            Lab7Button.TabIndex = 8;
+            Lab7Button.Text = "Lab7";
+            Lab7Button.UseVisualStyleBackColor = true;
+            Lab7Button.Click += Lab7Button_Click;
             // 
-            // button8
+            // Lab8Button
             // 
-            button8.Location = new Point(256, 220);
-            button8.Margin = new Padding(4, 5, 4, 5);
-            button8.Name = "button8";
-            button8.Size = new Size(140, 73);
-            button8.TabIndex = 7;
-            button8.Text = "button8";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(256, 303);
-            button9.Margin = new Padding(4, 5, 4, 5);
-            button9.Name = "button9";
-            button9.Size = new Size(140, 73);
-            button9.TabIndex = 6;
-            button9.Text = "button9";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(256, 387);
-            button10.Margin = new Padding(4, 5, 4, 5);
-            button10.Name = "button10";
-            button10.Size = new Size(140, 73);
-            button10.TabIndex = 5;
-            button10.Text = "button10";
-            button10.UseVisualStyleBackColor = true;
+            Lab8Button.Location = new Point(138, 162);
+            Lab8Button.Name = "Lab8Button";
+            Lab8Button.Size = new Size(120, 44);
+            Lab8Button.TabIndex = 7;
+            Lab8Button.Text = "Lab8";
+            Lab8Button.UseVisualStyleBackColor = true;
+            Lab8Button.Click += Lab8Button_Click;
             // 
             // FormExloler
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 750);
-            Controls.Add(button6);
-            Controls.Add(button7);
-            Controls.Add(button8);
-            Controls.Add(button9);
-            Controls.Add(button10);
-            Controls.Add(button5);
-            Controls.Add(button3);
-            Controls.Add(button4);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Margin = new Padding(4, 5, 4, 5);
+            ClientSize = new Size(273, 224);
+            Controls.Add(Lab6Button);
+            Controls.Add(Lab7Button);
+            Controls.Add(Lab8Button);
+            Controls.Add(Lab5Button);
+            Controls.Add(Lab3Button);
+            Controls.Add(Lab4Button);
+            Controls.Add(Lab2Button);
+            Controls.Add(Lab1Button);
             Name = "FormExloler";
             Text = "FormExloler";
             ResumeLayout(false);
@@ -168,15 +138,13 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
+        private Button Lab1Button;
+        private Button Lab2Button;
+        private Button Lab3Button;
+        private Button Lab4Button;
+        private Button Lab5Button;
+        private Button Lab6Button;
+        private Button Lab7Button;
+        private Button Lab8Button;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace LabForms
 {
-    partial class Lab5
+    partial class Lab5Form
     {
         /// <summary>
         /// Required designer variable.

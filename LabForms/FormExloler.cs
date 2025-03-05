@@ -6,35 +6,50 @@
         {
             InitializeComponent();
         }
+
         private static void OpenForm(Form lab)
         {
             lab.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Lab1Button_Click(object sender, EventArgs e)
         {
-            OpenForm(new Lab1());
+            OpenForm(new Lab1Form());
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Lab2Button_Click(object sender, EventArgs e)
         {
-            OpenForm(new Lab2());
+            OpenForm(new Lab2Form());
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Lab3Button_Click(object sender, EventArgs e)
         {
-            OpenForm(new Lab3());
+            OpenForm(new Lab3Form());
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Lab4Button_Click(object sender, EventArgs e)
         {
-            OpenForm(new Lab4());
+            OpenForm(new Lab4Form());
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Lab5Button_Click(object sender, EventArgs e)
         {
-            OpenForm(new Lab5());
+            OpenForm(new Lab5Form());
+        }
+
+        private void Lab6Button_Click(object sender, EventArgs e)
+        {
+            //OpenForm(new Lab6Form());
+        }
+
+        private void Lab7Button_Click(object sender, EventArgs e)
+        {
+            //OpenForm(new Lab7Form());
+        }
+
+        private void Lab8Button_Click(object sender, EventArgs e)
+        {
+            //OpenForm(new Lab8Form());
         }
     }
 }
