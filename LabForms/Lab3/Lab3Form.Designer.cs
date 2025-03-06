@@ -51,12 +51,13 @@
             SquareLabel = new Label();
             comboBox1 = new ComboBox();
             label7 = new Label();
+            ClearButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(256, 8);
+            pictureBox1.Location = new Point(399, 8);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(635, 426);
             pictureBox1.TabIndex = 0;
@@ -64,56 +65,56 @@
             // 
             // X0box
             // 
-            X0box.Location = new Point(110, 73);
+            X0box.Location = new Point(161, 66);
             X0box.Name = "X0box";
             X0box.Size = new Size(41, 23);
             X0box.TabIndex = 1;
             // 
             // X1box
             // 
-            X1box.Location = new Point(110, 102);
+            X1box.Location = new Point(161, 95);
             X1box.Name = "X1box";
             X1box.Size = new Size(41, 23);
             X1box.TabIndex = 2;
             // 
             // X2box
             // 
-            X2box.Location = new Point(110, 131);
+            X2box.Location = new Point(161, 124);
             X2box.Name = "X2box";
             X2box.Size = new Size(41, 23);
             X2box.TabIndex = 3;
             // 
             // X3box
             // 
-            X3box.Location = new Point(110, 160);
+            X3box.Location = new Point(161, 153);
             X3box.Name = "X3box";
             X3box.Size = new Size(41, 23);
             X3box.TabIndex = 4;
             // 
             // Y3box
             // 
-            Y3box.Location = new Point(157, 160);
+            Y3box.Location = new Point(208, 153);
             Y3box.Name = "Y3box";
             Y3box.Size = new Size(41, 23);
             Y3box.TabIndex = 8;
             // 
             // Y2box
             // 
-            Y2box.Location = new Point(157, 131);
+            Y2box.Location = new Point(208, 124);
             Y2box.Name = "Y2box";
             Y2box.Size = new Size(41, 23);
             Y2box.TabIndex = 7;
             // 
             // Y1box
             // 
-            Y1box.Location = new Point(157, 102);
+            Y1box.Location = new Point(208, 95);
             Y1box.Name = "Y1box";
             Y1box.Size = new Size(41, 23);
             Y1box.TabIndex = 6;
             // 
             // Y0box
             // 
-            Y0box.Location = new Point(157, 73);
+            Y0box.Location = new Point(208, 66);
             Y0box.Name = "Y0box";
             Y0box.Size = new Size(41, 23);
             Y0box.TabIndex = 5;
@@ -121,43 +122,43 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(56, 77);
+            label1.Location = new Point(12, 76);
             label1.Name = "label1";
-            label1.Size = new Size(44, 15);
+            label1.Size = new Size(120, 15);
             label1.TabIndex = 9;
-            label1.Text = "Cords0";
+            label1.Text = "Левая верхняя точка";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(56, 105);
+            label2.Location = new Point(12, 104);
             label2.Name = "label2";
-            label2.Size = new Size(44, 15);
+            label2.Size = new Size(128, 15);
             label2.TabIndex = 10;
-            label2.Text = "Cords1";
+            label2.Text = "Правая верхняя точка";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(56, 134);
+            label3.Location = new Point(12, 133);
             label3.Name = "label3";
-            label3.Size = new Size(44, 15);
+            label3.Size = new Size(126, 15);
             label3.TabIndex = 11;
-            label3.Text = "Cords2";
+            label3.Text = "Правая нижняя точка";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(56, 164);
+            label4.Location = new Point(12, 163);
             label4.Name = "label4";
-            label4.Size = new Size(44, 15);
+            label4.Size = new Size(118, 15);
             label4.TabIndex = 12;
-            label4.Text = "Cords3";
+            label4.Text = "Левая нижняя точка";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(125, 55);
+            label5.Location = new Point(163, 48);
             label5.Name = "label5";
             label5.Size = new Size(14, 15);
             label5.TabIndex = 13;
@@ -166,7 +167,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(169, 55);
+            label6.Location = new Point(207, 48);
             label6.Name = "label6";
             label6.Size = new Size(14, 15);
             label6.TabIndex = 14;
@@ -175,7 +176,7 @@
             // ColorLabel
             // 
             ColorLabel.AutoSize = true;
-            ColorLabel.Location = new Point(118, 262);
+            ColorLabel.Location = new Point(94, 194);
             ColorLabel.Name = "ColorLabel";
             ColorLabel.Size = new Size(36, 15);
             ColorLabel.TabIndex = 16;
@@ -183,9 +184,9 @@
             // 
             // DrawButton
             // 
-            DrawButton.Location = new Point(69, 199);
+            DrawButton.Location = new Point(26, 251);
             DrawButton.Name = "DrawButton";
-            DrawButton.Size = new Size(129, 60);
+            DrawButton.Size = new Size(167, 60);
             DrawButton.TabIndex = 17;
             DrawButton.Text = "Рисовать";
             DrawButton.UseVisualStyleBackColor = true;
@@ -193,7 +194,7 @@
             // 
             // SquareButton
             // 
-            SquareButton.Location = new Point(58, 335);
+            SquareButton.Location = new Point(219, 265);
             SquareButton.Name = "SquareButton";
             SquareButton.Size = new Size(140, 32);
             SquareButton.TabIndex = 18;
@@ -203,7 +204,7 @@
             // 
             // PerimeterButton
             // 
-            PerimeterButton.Location = new Point(58, 406);
+            PerimeterButton.Location = new Point(219, 212);
             PerimeterButton.Name = "PerimeterButton";
             PerimeterButton.Size = new Size(140, 32);
             PerimeterButton.TabIndex = 19;
@@ -214,7 +215,7 @@
             // PerimeterLaber
             // 
             PerimeterLaber.AutoSize = true;
-            PerimeterLaber.Location = new Point(96, 388);
+            PerimeterLaber.Location = new Point(272, 194);
             PerimeterLaber.Name = "PerimeterLaber";
             PerimeterLaber.Size = new Size(58, 15);
             PerimeterLaber.TabIndex = 20;
@@ -223,7 +224,7 @@
             // SquareLabel
             // 
             SquareLabel.AutoSize = true;
-            SquareLabel.Location = new Point(111, 317);
+            SquareLabel.Location = new Point(272, 247);
             SquareLabel.Name = "SquareLabel";
             SquareLabel.Size = new Size(43, 15);
             SquareLabel.TabIndex = 21;
@@ -232,7 +233,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(64, 280);
+            comboBox1.Location = new Point(44, 212);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(134, 23);
             comboBox1.TabIndex = 22;
@@ -248,11 +249,21 @@
             label7.Text = "Точки четырёхугольника (по часовой)";
             label7.TextAlign = ContentAlignment.TopCenter;
             // 
+            // ClearButton
+            // 
+            ClearButton.Location = new Point(26, 317);
+            ClearButton.Name = "ClearButton";
+            ClearButton.Size = new Size(167, 30);
+            ClearButton.TabIndex = 24;
+            ClearButton.Text = "Очистить";
+            ClearButton.UseVisualStyleBackColor = true;
+            // 
             // Lab3Form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(900, 450);
+            ClientSize = new Size(1046, 450);
+            Controls.Add(ClearButton);
             Controls.Add(label7);
             Controls.Add(comboBox1);
             Controls.Add(SquareLabel);
@@ -308,5 +319,6 @@
         private Label SquareLabel;
         private ComboBox comboBox1;
         private Label label7;
+        private Button ClearButton;
     }
 }

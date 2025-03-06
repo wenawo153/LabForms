@@ -15,27 +15,28 @@ public partial class AddRowTableDialor : Form
 
     private void AddButton_Click(object sender, EventArgs e)
     {
-        bool isError = false;
+        List<ReadErrors> errors = [];
 
         if (!int.TryParse(CountBox.Text, out int count))
         {
-            isError = true;
+            errors.Add(ReadErrors.CountError);
             CountBox.ForeColor = Color.Red;
         }
         if (!int.TryParse(ValueBox.Text, out int value))
         {
-            isError = true;
+            errors.Add(ReadErrors.ValueError);
             ValueBox.ForeColor = Color.Red;
         }
         if (!int.TryParse(CostBox.Text, out int cost))
         {
-            isError = true;
+            errors.Add(ReadErrors.CostError);
             CostBox.ForeColor = Color.Red;
         }
 
-        if (isError)
+        if (errors.Count != 0)
         {
-            MessageBox.Show("Ошибка ввода!", $"Неверный ввод полей!");
+            var readErrorsStr = ReadErrorTool.GenerateReadErrorString(errors);
+            MessageBox.Show($"Неверный ввод полей: {readErrorsStr}!", "Ошибка ввода!");
             return;
         }
 
@@ -52,12 +53,5 @@ public partial class AddRowTableDialor : Form
         }, true);
 
         Close();
-    }
-
-    public enum ReadErrors
-    {
-        CountError,
-        ValueError,
-        CostError
     }
 }

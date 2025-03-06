@@ -19,34 +19,35 @@ public partial class EditRowTableDialog : Form
     private void InitBoxes()
     {
         ValueBox.Text = selectedCCount.Value.ToString();
-        CountBox.Text = selectedCCount.Value.ToString();
-        CostBox.Text = selectedCCount.Value.ToString();
+        CountBox.Text = selectedCCount.CountNumber.ToString();
+        CostBox.Text = selectedCCount.Cost.ToString();
         DatePicker1.Text = selectedCCount.Date.ToString();
     }
 
     private void EditButton_Click(object sender, EventArgs e)
     {
-        bool isError = false;
+        List<ReadErrors> errors = [];
 
         if (!int.TryParse(CountBox.Text, out int count))
         {
-            isError = true;
+            errors.Add(ReadErrors.CountError);
             CountBox.ForeColor = Color.Red;
         }
         if (!int.TryParse(ValueBox.Text, out int value))
         {
-            isError = true;
+            errors.Add(ReadErrors.ValueError);
             ValueBox.ForeColor = Color.Red;
         }
         if (!int.TryParse(CostBox.Text, out int cost))
         {
-            isError = true;
+            errors.Add(ReadErrors.CostError);
             CostBox.ForeColor = Color.Red;
         }
 
-        if (isError)
+        if (errors.Count != 0)
         {
-            MessageBox.Show("Ошибка ввода!", $"Неверный ввод полей!");
+            var readErrorsStr = ReadErrorTool.GenerateReadErrorString(errors);
+            MessageBox.Show($"Неверный ввод полей: {readErrorsStr}!", "Ошибка ввода!");
             return;
         }
 

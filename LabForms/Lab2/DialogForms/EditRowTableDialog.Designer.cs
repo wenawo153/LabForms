@@ -44,7 +44,7 @@
             EditButton.BackColor = Color.Orange;
             EditButton.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             EditButton.ForeColor = SystemColors.Control;
-            EditButton.Location = new Point(72, 135);
+            EditButton.Location = new Point(172, 135);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(152, 53);
             EditButton.TabIndex = 19;
@@ -55,63 +55,63 @@
             // DateLabel
             // 
             DateLabel.AutoSize = true;
-            DateLabel.Location = new Point(76, 105);
+            DateLabel.Location = new Point(17, 96);
             DateLabel.Name = "DateLabel";
-            DateLabel.Size = new Size(31, 15);
+            DateLabel.Size = new Size(163, 15);
             DateLabel.TabIndex = 18;
-            DateLabel.Text = "Date";
+            DateLabel.Text = "Дата выписки счет-фактуры";
             // 
             // CostLabel
             // 
             CostLabel.AutoSize = true;
-            CostLabel.Location = new Point(76, 73);
+            CostLabel.Location = new Point(31, 67);
             CostLabel.Name = "CostLabel";
-            CostLabel.Size = new Size(31, 15);
+            CostLabel.Size = new Size(149, 15);
             CostLabel.TabIndex = 17;
-            CostLabel.Text = "Cost";
+            CostLabel.Text = "Стоимость приобретения";
             // 
             // ValueLabel
             // 
             ValueLabel.AutoSize = true;
-            ValueLabel.Location = new Point(72, 44);
+            ValueLabel.Location = new Point(86, 38);
             ValueLabel.Name = "ValueLabel";
-            ValueLabel.Size = new Size(35, 15);
+            ValueLabel.Size = new Size(94, 15);
             ValueLabel.TabIndex = 16;
-            ValueLabel.Text = "Value";
+            ValueLabel.Text = "Сумма к уплате";
             // 
             // CountLabel
             // 
             CountLabel.AutoSize = true;
-            CountLabel.Location = new Point(23, 15);
+            CountLabel.Location = new Point(55, 9);
             CountLabel.Name = "CountLabel";
-            CountLabel.Size = new Size(84, 15);
+            CountLabel.Size = new Size(125, 15);
             CountLabel.TabIndex = 15;
-            CountLabel.Text = "CountNumber";
+            CountLabel.Text = "Номер счет-фактуры";
             // 
             // DatePicker1
             // 
-            DatePicker1.Location = new Point(125, 99);
+            DatePicker1.Location = new Point(186, 96);
             DatePicker1.Name = "DatePicker1";
             DatePicker1.Size = new Size(138, 23);
             DatePicker1.TabIndex = 14;
             // 
             // CostBox
             // 
-            CostBox.Location = new Point(125, 70);
+            CostBox.Location = new Point(186, 67);
             CostBox.Name = "CostBox";
             CostBox.Size = new Size(138, 23);
             CostBox.TabIndex = 13;
             // 
             // ValueBox
             // 
-            ValueBox.Location = new Point(125, 41);
+            ValueBox.Location = new Point(186, 38);
             ValueBox.Name = "ValueBox";
             ValueBox.Size = new Size(138, 23);
             ValueBox.TabIndex = 12;
             // 
             // CountBox
             // 
-            CountBox.Location = new Point(125, 12);
+            CountBox.Location = new Point(186, 9);
             CountBox.Name = "CountBox";
             CountBox.Size = new Size(138, 23);
             CountBox.TabIndex = 11;
@@ -120,7 +120,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(300, 222);
+            ClientSize = new Size(339, 202);
             Controls.Add(EditButton);
             Controls.Add(DateLabel);
             Controls.Add(CostLabel);

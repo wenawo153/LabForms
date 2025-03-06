@@ -43,15 +43,15 @@ namespace LabForms
         {
             try
             {
-                var x0 = int.Parse(X0box.Text);
-                var x1 = int.Parse(X1box.Text);
-                var x2 = int.Parse(X2box.Text);
-                var x3 = int.Parse(X3box.Text);
+                var x0 = ParseAndCheckBoxX(X0box.Text);
+                var x1 = ParseAndCheckBoxX(X1box.Text);
+                var x2 = ParseAndCheckBoxX(X2box.Text);
+                var x3 = ParseAndCheckBoxX(X3box.Text);
 
-                var y0 = int.Parse(Y0box.Text);
-                var y1 = int.Parse(Y1box.Text);
-                var y2 = int.Parse(Y2box.Text);
-                var y3 = int.Parse(Y3box.Text);
+                var y0 = ParseAndCheckBoxY(Y0box.Text);
+                var y1 = ParseAndCheckBoxY(Y1box.Text);
+                var y2 = ParseAndCheckBoxY(Y2box.Text);
+                var y3 = ParseAndCheckBoxY(Y3box.Text);
 
                 if (selectColor == Color.Black)
                 {
@@ -71,17 +71,52 @@ namespace LabForms
 
         }
 
+        private int ParseAndCheckBoxX(string box)
+        {
+            try
+            {
+                var x = int.Parse(box);
+
+                if (x >= 1 && x <= this.x - 1)
+                {
+                    return x;
+                }
+                throw new Exception();
+            }
+            catch (ArgumentException)
+            {
+                throw new Exception();
+            }
+        }
+        private int ParseAndCheckBoxY(string box)
+        {
+            try
+            {
+                var x = int.Parse(box);
+
+                if (x >= 1 && x <= this.y - 1)
+                {
+                    return x;
+                }
+                throw new Exception();
+            }
+            catch (ArgumentException)
+            {
+                throw new Exception();
+            }
+        }
+
         private void InitForm()
         {
-            X0box.Text = "0";
-            X1box.Text = "0";
-            X2box.Text = "0";
-            X3box.Text = "0";
+            X0box.Text = "1";
+            X1box.Text = "1";
+            X2box.Text = "1";
+            X3box.Text = "1";
 
-            Y0box.Text = "0";
-            Y1box.Text = "0";
-            Y2box.Text = "0";
-            Y3box.Text = "0";
+            Y0box.Text = "1";
+            Y1box.Text = "1";
+            Y2box.Text = "1";
+            Y3box.Text = "1";
 
             selectColor = colors.First();
             colors.ForEach(_ => comboBox1.Items.Add(_));
@@ -92,7 +127,13 @@ namespace LabForms
             graphics.Clear(Color.White);
 
             quadrilateral = InitQuadrilateral();
-            if (quadrilateral == null) return;
+            if (quadrilateral == null) 
+            {
+                MessageBox.Show("Проверьте правильность введённых координат, " +
+                    $"а также удостоверьтесь, что они лежат в интервале 1<=x<={this.x - 1} и 1<=y<={this.y - 1}",
+                    "Ошибка ввода!");
+                return;
+            }
 
             if (quadrilateral is ColorQuadrilateral colorQuadrilateral)
             {

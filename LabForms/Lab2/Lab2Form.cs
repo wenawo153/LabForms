@@ -30,6 +30,11 @@ public partial class Lab2Form : Form
         };
         dataGridView1.AutoGenerateColumns = true;
         dataGridView1.DataSource = bindingSource;
+
+        dataGridView1.Columns[1].HeaderText = "Номер счет-фактуры";
+        dataGridView1.Columns[2].HeaderText = "Сумма к уплате";
+        dataGridView1.Columns[3].HeaderText = "Стоимость приобретения";
+        dataGridView1.Columns[4].HeaderText = "Дата выписки счет-фактуры";
     }
 
     public void EditList(CCount cCount, bool isNew)
@@ -47,13 +52,6 @@ public partial class Lab2Form : Form
     public int GetLegacyId()
     {
         var max = cCounts.Select(_ => _.Id).Max();
-        for (var i = 1; i < max; i++)
-        {
-            if (!cCounts.Select(_ => _.Id).Contains(i))
-            {
-                return i;
-            }
-        }
         return max + 1;
     }
 
@@ -68,7 +66,7 @@ public partial class Lab2Form : Form
         var row = dataGridView1.SelectedRows;
         if (row.Count != 1)
         {
-            MessageBox.Show("Ошибка!", "Должна быть выбрана одна строка");
+            MessageBox.Show("Должна быть выбрана одна строка", "Ошибка!");
             return;
         };
 
